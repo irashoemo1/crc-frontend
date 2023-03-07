@@ -1,0 +1,37 @@
+body{
+    margin: 0 10em;
+}
+
+header{
+    text-align: center;
+}
+
+header ul{
+    display: flex;
+    width: 65%;
+    margin: auto;
+}
+
+header ul li{
+    list-style: none;
+    padding-left: 0.5em;
+    margin-right: 1em;
+    border-left: 1px solid black;
+}
+
+.job-details, .company-details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.technical-skills{
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.technical-skills li{
+    margin-right: .25em;
+}
+
+
