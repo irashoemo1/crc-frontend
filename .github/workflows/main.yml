@@ -12,10 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@main
       - uses: jakejarvis/s3-sync-action@master
-        name: Use Node.js
-        uses: actions/setup-node@v3
         with:
-          node-version: '18.x'
           args: --follow-symlinks --delete --exclude '.git*/*'
        env:
         SOURCE_DIR: ./
