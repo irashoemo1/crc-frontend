@@ -2,7 +2,7 @@ const visitorCounter = document.querySelector('#visitor-counter');
 // document.querySelector('#visitor-button').addEventListener('click', visitorCount)
 
 
-fetch('https://n7p1hha2i6.execute-api.us-east-2.amazonaws.com/dev/visitors/1')
+fetch('https://aqz2aoirg0.execute-api.us-east-2.amazonaws.com/dev/visitors/1')
     .then(response => {
         return response.json()
     })
