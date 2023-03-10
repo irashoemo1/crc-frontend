@@ -39,7 +39,11 @@
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                <li class="nav-item visitor-count">
+                    You are visitor #<span id="visitor-counter">1</span>
+                </li>
+
+                <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li> -->
                 <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li> -->
             </ul>
         </div>
@@ -57,11 +61,23 @@
                     Hempstead, NY 11550 · (516) 782-7028 ·
                     <a href="mailto:name@email.com">irashoemo1@gmail.com</a>
                 </div>
-                <p class="lead mb-5">Software engineer with a variety of skills in web development, proficiency in
-                    creating and implementing
-                    successful dynamic front and back end web applications and a knack for resolving challenges. Looking
-                    to
-                    bring my skills to a tech company with global reach.
+                <p class="lead mb-5">
+                    Welcome to my cloud portfolio. I built this web app on AWS as part of the Cloud Resume Challenge.
+                    For the frontend, I used S3 to store the content for the webpage, purchased
+                    the domain irashoemo.com through Route 53 and directed traffic to a secure (HTTPS) CloudFront
+                    distribution. For the backend, I used DynamoDB to keep track of the amount of visitors to
+                    this webpage. Each time the page is loaded, a Javascript function makes an API call to API
+                    Gateway, which triggers a Lambda function to add +1 to the visit count in DynamoDB, and retrieve the
+                    current visit count to be displayed at the bottom of the page to the viewer. Lastly, I provisioned
+                    the backend resources with Terraform.
+
+                    I am a Software engineer with a variety of skills in web development, proficiency in creating and
+                    implementing
+                    successful dynamic front and back end web applications and a knack for resolving challenges. I have
+                    a huge interest in
+                    AWS and the cloud. I am looking to learn more about Cloud technologies and use my previous
+                    experience of building out
+                    full stack applications to be of use to my team.
                 </p>
                 <div class="social-icons">
                     <a class="social-icon" href="https://www.linkedin.com/in/ira-shoemo-dev/"><i
@@ -212,7 +228,7 @@
         </section>
         <hr class="m-0" />
         <!-- Interests-->
-        <section class="resume-section" id="interests">
+        <!-- <section class="resume-section" id="interests">
             <div class="resume-section-content">
                 <h2 class="mb-5">Interests</h2>
                 <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid
@@ -221,10 +237,9 @@
                 <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television
                     shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest
                     technology advancements in the front-end web development world.</p>
-                <h3>You are visitor #<span id="visitor-counter">1</span> </h3>
             </div>
         </section>
-        <hr class="m-0" />
+        <hr class="m-0" /> -->
         <!-- Awards-->
         <!-- <section class="resume-section" id="awards">
             <div class="resume-section-content">

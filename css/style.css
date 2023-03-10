@@ -12391,6 +12391,10 @@ section.resume-section .resume-section-content {
     min-width: 20% !important;
 }
 
+.visitor-count {
+    color: #fff !important;
+}
+
 @media (min-width: 768px) {
     section.resume-section {
         min-height: 100vh;
